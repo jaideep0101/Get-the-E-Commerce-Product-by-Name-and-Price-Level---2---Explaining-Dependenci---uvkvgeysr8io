@@ -16,20 +16,20 @@ const id = (req.params.id);
   
   if(product){
   res.status(200).json({
-  status:"success",
-  message:"Product fetched successfully",
-    data:{
-    products:{
-    id:product.id,
-      name:product.name,
-      price:product.price,
-      quantity:product.quantity
+  status: "success",
+  message: "Product fetched successfully",
+    data: {
+    products: {
+    id: product.id,
+      name: product.name,
+      price: product.price,
+      quantity: product.quantity
     }}
   });
   }else{
     res.status(404).json({
-    status:"failed",
-    message:"Product not faound!"
+    status: "failed",
+    message: "Product not faound!"
     })
   }
 })
