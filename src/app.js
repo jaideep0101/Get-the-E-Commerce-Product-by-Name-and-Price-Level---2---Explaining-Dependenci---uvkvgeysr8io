@@ -19,7 +19,7 @@ const id = parseInt(req.params.id);
   "status": "success",
   "message": "Product fetched successfully",
     "data": {
-    "products": {
+    "product": {
     "id": product.id,
       "name": product.name,
       "price": product.price,
